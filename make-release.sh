@@ -64,7 +64,7 @@ updateYaml() {
     echo "[WARN] Existing prod-ver ${OLDVERSION} is greater or equal than planned update to ${NEWVERSION}. Version should not go backwards, so nothing to do!"
     return 1
   else 
-    replaceFieldSed $playbookfile 'prod-ver' "${BASE1}.${BASE2}"
+    replaceFieldSed $playbookfile 'prod-ver' "\"${BASE1}.${BASE2}\""
     replaceFieldSed $playbookfile 'prod-ver-patch' $NEWVERSION
     # set prod-prev-ver = 7.y-1
     (( BASE2=BASE2-1 ))
