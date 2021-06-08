@@ -13,4 +13,95 @@ nav:
   - modules/contributor-guide/nav.adoc
   - modules/extensions/nav.adoc
   - modules/glossary/nav.adoc
-
+asciidoc:
+  attributes:
+    # for antora
+    context: che
+    experimental: ""
+    favicon: favicon.png
+    icons: font
+    # for the project
+    broker-ver: v3.4.0
+    che-devfile-registry-container-image: quay.io/eclipse/che-devfile-registry
+    che-devfile-registry-directory: che-devfile-registry
+    che-plugin-registry-container-image: quay.io/eclipse/che-plugin-registry
+    che-plugin-registry-directory: che-plugin-registry
+    devworkspace: Dev Workspace
+    identity-provider-docs-url: https://www.keycloak.org/docs/
+    identity-provider-id: keycloak
+    identity-provider-image-url: quay.io/eclipse/che-keycloak
+    identity-provider-url: https://www.keycloak.org/
+    identity-provider-version: "6.0"
+    identity-provider: Keycloak
+    image-puller-cr-name: KubernetesImagePuller
+    image-puller-deployment-id: kubernetes-image-puller-operator
+    image-puller-deployment-name: kubernetes-image-puller
+    image-puller-image-name: quay.io/eclipse/kubernetes-image-puller
+    image-puller-image-tag: latest
+    image-puller-images: "java11-maven=quay.io/eclipse/che-java11-maven:nightly;che-theia=quay.io/eclipse/che-theia:next;java-plugin-runner=eclipse/che-remote-plugin-runner-java8:latest;"
+    image-puller-name-short: Image Puller
+    image-puller-name: Kubernetes Image Puller
+    image-puller-operator-id: kubernetes-image-puller-operator
+    image-puller-operator-name: Kubernetes Image Puller Operator
+    image-puller-operator-repository-name: kubernetes-image-puller-operator
+    image-puller-repository-name: kubernetes-image-puller
+    kubernetes: Kubernetes
+    link-accessing-a-git-repository-via-https: xref:end-user-guide:version-control.adoc#accessing-a-git-repository-via-https_che[Accessing a Git repository using HTTPS]
+    link-advanced-configuration-options-for-the-che-server: xref:installation-guide:advanced-configuration-options-for-the-che-server-component.adoc[]
+    link-advanced-configuration-options: xref:installation-guide:advanced-configuration-options-for-the-che-server-component.adoc[]
+    link-building-a-custom-plug-in-registry: xref:administration-guide:building-and-running-a-custom-registry-image.adoc#building-a-custom-devfile-registry_che[Building a custom devfile registry]
+    link-cli-github: https://github.com/che-incubator/chectl
+    link-identity-provider-documentation-openshift-3: https://www.keycloak.org/docs/latest/server_admin/#openshift-3
+    link-identity-provider-documentation-openshift-4: https://www.keycloak.org/docs/latest/server_admin/#openshift-4
+    link-identity-provider-github: "https://www.keycloak.org/docs/6.0//server_admin/#github"
+    link-identity-provider-oidc: "https://www.keycloak.org/docs/6.0/server_admin/#_oidc"
+    link-identity-provider-saml: "https://www.keycloak.org/docs/6.0/server_admin/#saml-v2-0-identity-providers"
+    link-installing-an-instance: xref:installation-guide:installing-che.adoc[]
+    link-postgres-dockerfile-location: https://github.com/eclipse-che/che-server/tree/main/dockerfiles/postgres
+    link-server-identity-provider-dockerfile-location: https://github.com/eclipse-che/che-server/tree/main/dockerfiles/keycloak
+    link-viewing-the-state-of-the-cluster-deployment-using-openshift-4-cli-tools: xref:overview:installing-che-on-openshift-4-using-operatorhub.adoc[]
+    namespace: namespace # In context: API namespace
+    nodejs-stack: nodejs
+    oc4-ver: 4.6
+    ocp: OpenShift&#160;Container&#160;Platform
+    ocp3-ver: 3.11
+    ocp4-ver: 4.6
+    orch-cli-link: link:https://kubernetes.io/docs/reference/kubectl/overview/[Overview of kubectl]
+    orch-cli: kubectl
+    orch-ingress: Kubernetes Ingress
+    orch-name: Kubernetes
+    orch-namespace: namespace # In context: orch-name orch-namespace
+    osd: OpenShift&#160;Dedicated
+    platforms-cli: "`kubectl` or `oc`"
+    platforms-identity-provider: "Identity Provider (Keycloak or RH-SSO)"
+    platforms-ingress: Kubernetes Ingress or OpenShift Route
+    platforms-name: Kubernetes or OpenShift
+    platforms-namespace: Kubernetes namespace or OpenShift project
+    postgresql-image-url: quay.io/eclipse/che-postgres
+    prod-checluster: eclipse-che
+    prod-cli: chectl
+    prod-deployment: che
+    prod-docs-url: https://www.eclipse.org/che/docs
+    prod-home: /home/user
+    prod-host: che-host
+    prod-id-short: che
+    prod-id: eclipse-che
+    prod-namespace: eclipse-che
+    prod-operator-image-name: che-operator
+    prod-operator: che-operator
+    prod-prev-ver-major: "6"
+    prod-prev-ver: "7.31"
+    prod-short: Che
+    prod-upstream: Eclipse{nbsp}Che
+    prod-url: https://che-host:che-port
+    prod-ver-major: "7"
+    prod-ver-patch: "7.32.0"
+    prod-ver: "7.32"
+    prod-workspace: che-ws
+    prod: Eclipse&#160;Che
+    prod2: Eclipse&#160;Che
+    project-context: che
+    repo-path: ""
+    theia-endpoint-image: eclipse/che-theia-endpoint-runtime:next
+    url-devfile-registry-repo: https://github.com/eclipse/che-devfile-registry
+    url-plug-in-registry-repo: https://github.com/eclipse/che-plugin-registry

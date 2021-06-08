@@ -10,8 +10,8 @@ site:
 content:
   sources:
     - url: ./
-      branches: HEAD
-      edit_url: "https://github.com/eclipse/che-docs/edit/master/{path}"
+      branches: 7.31.x
+      edit_url: "https://github.com/eclipse/che-docs/edit/7.31.x/{path}"
 output:
   destinations:
     - provider: fs

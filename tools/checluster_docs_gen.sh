@@ -22,9 +22,9 @@ BUFF=""
 OUTPUT_PATH="$PARENT_PATH/modules/installation-guide/examples/checluster-properties.adoc"
 
 fetch_current_version() {
-  echo "Trying to read current product version from $PARENT_PATH/antora-playbook.yml..." >&2
+  echo "Trying to read current product version from $PARENT_PATH/antora.yml..." >&2
   # remove spaces, single and double quotes from the value of prod-ver, then append x.
-  CURRENT_VERSION=$(yq -M '.asciidoc.attributes."prod-ver"' "$PARENT_PATH/antora-playbook.yml" | tr -d " '\"" ).x
+  CURRENT_VERSION=$(yq -M '.asciidoc.attributes."prod-ver"' "$PARENT_PATH/antora.yml" | tr -d " '\"" ).x
   if [[ "$CURRENT_VERSION" == *-SNAPSHOT ]]; then
     CURRENT_VERSION="master"
   fi
@@ -32,8 +32,8 @@ fetch_current_version() {
 }
 
 fetch_product_name() {
-  echo "Trying to read product name from $PARENT_PATH/antora-playbook.yml..." >&2
-  PRODUCT=$(yq -rM '.asciidoc.attributes."prod-id-short"' "$PARENT_PATH/antora-playbook.yml")
+  echo "Trying to read product name from $PARENT_PATH/antora.yml..." >&2
+  PRODUCT=$(yq -rM '.asciidoc.attributes."prod-id-short"' "$PARENT_PATH/antora.yml")
   echo "Detected product: $PRODUCT" >&2
 }
 
