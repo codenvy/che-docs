@@ -91,13 +91,13 @@ asciidoc:
     prod-operator-image-name: che-operator
     prod-operator: che-operator
     prod-prev-ver-major: "6"
-    prod-prev-ver: "7.31"
+    prod-prev-ver: "7.32"
     prod-short: Che
     prod-upstream: Eclipse{nbsp}Che
     prod-url: https://che-host:che-port
     prod-ver-major: "7"
-    prod-ver-patch: "7.32.0"
-    prod-ver: "7.32"
+    prod-ver-patch: "7.33.0"
+    prod-ver: "7.33"
     prod-workspace: che-ws
     prod: Eclipse&#160;Che
     prod2: Eclipse&#160;Che
