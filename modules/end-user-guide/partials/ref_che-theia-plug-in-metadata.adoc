@@ -22,7 +22,7 @@ The Che-Theia plug-in metadata, for each specific plug-in, is defined in a `meta
 Here is an overview of all fields that can be available in plugin meta YAML files. This document represents the link:https://github.com/eclipse-che/che-plugin-registry#user-content-plugin-meta-yaml-structure[plugin meta YAML structure (version 3)].
 
 ifeval::["{project-context}" == "che"]
-In the link:https://github.com/eclipse-che/che-plugin-registry/tree/{prod-ver-patch}[{prod-short} plug-ins registry repository], the `che-theia-plugins.yaml` contains a list of all Che-Theia plug-ins in the registry. Build the registry container image to generate the `meta.yaml` file.
+In the link:https://github.com/eclipse-che/che-plugin-registry[{prod-short} plug-ins registry repository], the `che-theia-plugins.yaml` contains a list of all Che-Theia plug-ins in the registry. Build the registry container image to generate the `meta.yaml` file.
 endif::[]
 
 .`meta.yml`
