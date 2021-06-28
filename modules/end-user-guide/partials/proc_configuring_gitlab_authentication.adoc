@@ -13,7 +13,7 @@ See the link:https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html
 
 To allow GitLab authentication on {prod-short} side, personal tokens must be stored in the user's {orch-namespace} in the form of
 a secret. The secret must look as follows:
-+
+
 .GitLab personal access token secret
 ====
 include::example$snip_gitlab-personal-access-token-secret.adoc[]
