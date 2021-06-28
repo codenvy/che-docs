@@ -10,7 +10,7 @@ site:
 content:
   sources:
     - url: ./
-      branches: 7.31.x
+      branches: 7.32.x
       edit_url: "https://github.com/eclipse/che-docs/edit/7.31.x/{path}"
 output:
   destinations:

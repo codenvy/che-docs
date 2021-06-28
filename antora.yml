@@ -41,6 +41,7 @@ asciidoc:
     image-puller-images: "java11-maven=quay.io/eclipse/che-java11-maven:nightly;che-theia=quay.io/eclipse/che-theia:next;java-plugin-runner=eclipse/che-remote-plugin-runner-java8:latest;"
     image-puller-name-short: Image Puller
     image-puller-name: Kubernetes Image Puller
+    image-puller-namespace: k8s-image-puller
     image-puller-operator-id: kubernetes-image-puller-operator
     image-puller-operator-name: Kubernetes Image Puller Operator
     image-puller-operator-repository-name: kubernetes-image-puller-operator
@@ -62,10 +63,10 @@ asciidoc:
     link-viewing-the-state-of-the-cluster-deployment-using-openshift-4-cli-tools: xref:overview:installing-che-on-openshift-4-using-operatorhub.adoc[]
     namespace: namespace # In context: API namespace
     nodejs-stack: nodejs
-    oc4-ver: 4.6
+    oc4-ver: "4.6"
     ocp: OpenShift&#160;Container&#160;Platform
-    ocp3-ver: 3.11
-    ocp4-ver: 4.6
+    ocp3-ver: "3.11"
+    ocp4-ver: "4.6"
     orch-cli-link: link:https://kubernetes.io/docs/reference/kubectl/overview/[Overview of kubectl]
     orch-cli: kubectl
     orch-ingress: Kubernetes Ingress
