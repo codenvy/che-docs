@@ -1,0 +1,31 @@
+// Module included in the following assemblies:
+//
+// creating-a-workspace-from-code-sample
+
+[id="creating-a-workspace-from-quick-add-view-of-user-dashboard_{context}"]
+= Creating a workspace from Quick Add of user dashboard
+
+This section describes how to create a workspace using the user dashboard and a code sample.
+
+.Prerequisites
+
+* A running instance of {prod-short}. To install an instance of {prod-short}, see xref:installation-guide:installing-che.adoc[].
+
+.Procedure
+
+. Navigate to the {prod-short} dashboard. See xref:navigating-che-using-the-dashboard.adoc[].
+
+. In the left navigation panel, go to *Create Workspace*.
+
+. Click the btn:[Quick Add] tab.
++
+The gallery lists sample projects to build and run.
+
+. To start a workspace, select a sample project from the set of pre-created devfiles.
+
+
+[NOTE]
+.A new workspace name
+====
+Unless overridden, workspace names will be generated from the `metadata.generateName` property in the devfile, plus four random characters to ensure uniqueness.
+====

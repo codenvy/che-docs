@@ -89,4 +89,4 @@ pass:[<!-- vale Vale.Terms = NO -->]
 
 pass:[<!-- vale Vale.Terms = YES -->]
 
-* The devfiles are available in the *Get Started* and *Create Custom Workspace* tab of the user dashboard.
+* The devfiles are available in the *Quick Add* and *Custom Workspace* tab of the *Create Workspace* page on the user dashboard.

@@ -19,7 +19,7 @@ This procedure uses the Language Support for Java plug-in as an example.
 
 * An existing workspace defined in this instance of {prod}; see:
 ** xref:configuring-a-workspace-with-dashboard.adoc[]
-** xref:creating-a-workspace-from-code-sample.adoc#creating-a-workspace-from-get-started-view-of-user-dashboard_{context}[Creating a workspace from Get Started view of user dashboard]
+** xref:creating-a-workspace-from-code-sample.adoc#creating-a-workspace-from-quick-add-view-of-user-dashboard_{context}[Creating a workspace from Quick Add view of user dashboard]
 
  * The workspace must be in a **stopped** state. To stop a workspace:
 

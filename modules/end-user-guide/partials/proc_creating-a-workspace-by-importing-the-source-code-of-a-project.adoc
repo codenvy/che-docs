@@ -29,7 +29,7 @@ To create a new workspace for editing an existing codebase, use one of the follo
 [id="creating-a-custom-workspace-from-the-dashboard_{context}"]
 == Select a sample from the Dashboard, then change the devfile to include your project
 
-* In the left navigation panel, go to *Get Started*.
+* In the left navigation panel, go to *Create Workspace*.
 
 * In a case it's not selected already, click the *Custom Workspace* tab.
 

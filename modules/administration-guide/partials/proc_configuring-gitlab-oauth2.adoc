@@ -15,10 +15,11 @@ OAuth2 for GitLab allows accepting factories from private GitLab repositories.
 .Procedure
 
 * Create a link:https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications[Authorized OAuth2 application in GitLab] using {prod-short} as the application `Name` and {identity-provider} GitLab endpoint URL as the value for `Redirect URI`. The callback URL default value is `++https://++keycloak-{prod-namespace}.__<DOMAIN>__/auth/realms/{prod-deployment}/broker/gitlab/endpoint`, where `__<DOMAIN>__` is {orch-name} cluster domain. Store the `Application ID` and `Secret` values. 
-  All three types of GitLab OAuth2 applications are supported: User owned, Group owned and Instance-wide.
+  All three types of GitLab OAuth 2 applications are supported: User owned, Group owned and Instance-wide.
 
 . Create a custom OIDC provider link on {identity-provider} pointing to GitLab server. Fill the following fields:
-
++
+====
 Client ID:: a value from the `Application ID` field provided by GitLab server in previous step;
 Client Secret:: a value from `Secret` field provided by GitLab server in previous step;
 Authorization URL:: a URL which have a `https://__<GITLAB_DOMAIN>__/oauth/authorize` format;
@@ -26,14 +27,19 @@ Token URL:: a URL which have a `https://__<GITLAB_DOMAIN>__/oauth/token` format;
 Scopes:: set of scopes which must contain (but not limited to) the following set: `api write_repository openid`;
 Store Tokens:: needs to be enabled;
 Store Tokens Readable:: needs to be enabled
-
-
+====
 + 
 [NOTE]
 ====
 * Substitute `_<GITLAB_DOMAIN>_` with the URL and port of the GitLab installation.
 ==== 
 
+. Register the GitLab instance URL with the enabled OAuth 2 support in {prod-short} using the `+CHE_INTEGRATION_GITLAB_OAUTH__ENDPOINT+` property.
++
+[WARNING]
+====
+* The GitLab instance URL must be present in the list of configured GitLab integration endpoints, set by the `+CHE_INTEGRATION_GITLAB_SERVER__ENDPOINTS+` property.
+====
 
 .Additional resources 
 In case of having issues {prod-short} accessing GitLab related to TLS keys, consult with the following docs:

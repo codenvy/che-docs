@@ -13,7 +13,7 @@ This section describes how to create a custom workspace from a template.
 
 . Navigate to the {prod-short} Dashboard. See xref:navigating-che-using-the-dashboard.adoc[].
 
-. In the left navigation panel, go to *Get Started*.
+. In the left navigation panel, go to *Create Workspace*.
 
 . Click the btn:[Custom Workspace] tab.
 
