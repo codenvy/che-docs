@@ -76,9 +76,13 @@ TIP: For Antora, a link:https://docs.antora.org/antora/2.3/module-directories/#m
 [id="editing-submitting-and-reviewing-new-content"]
 == Editing, submitting and reviewing new content
 
+.Prerequisites
+
+* A fork of the link:https://github.com/eclipse/che-docs/[] project, accessible at the following URL, where `__<organization>__` is your GitHub organization or username: `++https++://github.com/__<organization__/che-docs/`. See link:https://help.github.com/en/github/getting-started-with-github/fork-a-repo[Fork a repository].
+
 .Procedure
 
-. Open a che-docs workspace running on Hosted Che: `++https++://workspaces.openshift.com/f?url=https://github.com/__<github-handle>__/che-docs/tree/__<branch-name>__/`
+. Open a che-docs workspace running on Eclipse Che hosted by Red Hat: `++https++://workspaces.openshift.com/f?url=https://github.com/__<organization>__/che-docs/`. 
 
 . Create a branch `__<branch-name>__` for your work.
 
