@@ -1,0 +1,7 @@
+[id="configuring-the-number-of-workspaces-that-a-user-can-create"]
+// = Configuring the number of workspaces that a user can create
+:navtitle: Configuring the number of workspaces that a user can create
+:keywords: installation-guide
+:page-aliases: .:configuring-the-number-of-workspaces-that-a-user-can-create
+
+include::partial$assembly_configuring-the-number-of-workspaces-that-a-user-can-create.adoc[]

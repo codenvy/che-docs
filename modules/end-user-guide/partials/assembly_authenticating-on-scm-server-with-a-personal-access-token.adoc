@@ -8,15 +8,19 @@
 
 The following section describes how to configure user authentications for SCM servers.
 
+* xref:configuring_bitbucket_authentication_{context}[]
+
 * xref:configuring_gitlab_authentication_{context}[]
 
-* xref:configuring_bitbucket_authentication_{context}[]
+* xref:configuring_github_authentication_{context}[]
 
 
 
 include::partial$proc_configuring_bitbucket_authentication.adoc[leveloffset=+1]
 
 include::partial$proc_configuring_gitlab_authentication.adoc[leveloffset=+1]
+
+include::partial$proc_configuring_github_authentication.adoc[leveloffset=+1]
 
 
 :context: {parent-context-of-authenticating-on-scm-server-with-a-personal-access-token}

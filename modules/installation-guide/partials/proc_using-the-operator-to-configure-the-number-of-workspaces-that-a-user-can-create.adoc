@@ -1,0 +1,32 @@
+[id="using-the-operator-to-configure-the-number-of-workspaces-that-a-user-can-create_{context}"]
+= Using the Operator to configure the number of workspaces that a user can create 
+
+This procedure describes how to configure the number of workspaces that a user can create. By creating multiple workspaces, users can have access to workspaces with different configurations simultaneously.
+
+.Prerequisites
+
+* You have installed an instance of `{prod-short}` by using the Operator.
+* You have determined the value of the `_<number-of-workspaces>_` placeholder.
++
+[NOTE]
+====
+If the value is `-1`, users can create an unlimited number of workspaces. If the value is a positive integer, users can create as many workspaces as the value of the integer. The default value is `-1`.
+====
+
+.Procedure
+
+* In the `CheCluster` Custom Resource `server` settings, configure the number of workspaces that a user can create by adding the `+CHE_LIMITS_USER_WORKSPACES_COUNT+` property to `customCheProperties`:
++
+====
+[source,yaml,subs="+quotes"]
+----
+apiVersion: org.eclipse.che/v1
+kind: CheCluster
+# [...]
+spec:
+  server:
+    # [...]
+    customCheProperties:
+      CHE_LIMITS_USER_WORKSPACES_COUNT: "__<number-of-workspaces>__"
+----
+====

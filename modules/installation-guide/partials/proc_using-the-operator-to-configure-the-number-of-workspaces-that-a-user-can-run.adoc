@@ -1,0 +1,39 @@
+
+[id="using-the-operator-to-configure-the-number-of-workspaces-that-a-user-can-run_{context}"]
+= Using the Operator to configure the number of workspaces that a user can run
+
+This procedure describes how to configure `{prod-short}` to run more than one workspace simultaneously. By running multiple workspaces, users can use different work environments simultaneously. 
+
+.Prerequisites
+* You have installed an instance of `{prod-short}` by using the Operator.
+* The combination of PVC strategy and access mode meets the following criteria:
++
+--
+** `ReadWriteMany` access mode and an arbitrary PVC strategy
+** `ReadWriteOnce` access mode and `per-workspace` or `unique` PVC strategy
+--
++
+See xref:configuring-storage-strategies.adoc[].
+* You have determined the value of the `_<number-of-workspaces>_` placeholder.
++
+[NOTE]
+====
+If the value is `-1`, an unlimited number of workspaces can run per user. If the value is a positive integer, users can run as many workspaces as the value of the integer. The default value is `1`.
+====
+
+.Procedure
+. In the `CheCluster` Custom Resource `server` settings, configure the number of workspaces that a user can run by adding the `+CHE_LIMITS_USER_WORKSPACES_RUN_COUNT+` property to `customCheProperties`:
++
+====
+[source,yaml,subs="+quotes"]
+----
+apiVersion: org.eclipse.che/v1
+kind: CheCluster
+# [...]
+spec:
+  server:
+    # [...]
+    customCheProperties:
+      CHE_LIMITS_USER_WORKSPACES_RUN_COUNT: "__<number-of-workspaces>__"
+----
+====

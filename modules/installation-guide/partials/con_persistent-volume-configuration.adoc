@@ -40,7 +40,7 @@ If there are several nodes, you can use the `common` strategy, but:
 
 * The workspace PVC access mode must be reconfigured to `ReadWriteMany` (RWM), so multiple nodes can use this PVC simultaneously.
 
-* Only one workspace in the same {orch-namespace} may be running. See xref:installation-guide:configuring-the-number-of-workspaces-a-user-can-run.adoc[].
+* Only one workspace in the same {orch-namespace} may be running. See xref:installation-guide:configuring-the-number-of-workspaces-that-a-user-can-run.adoc[].
 
 The `common` PVC strategy is not suitable for large multi-node clusters. Therefore, it is best to use it in single-node clusters. However, in combination with the `per-workspace` {orch-namespace} strategy, the `common` PVC strategy is usable for clusters with not more than 75 nodes. The PVC used with this strategy must be large enough to accommodate all projects to prevent a situation in which one project depletes the resources of others.
 

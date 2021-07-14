@@ -1,0 +1,73 @@
+// Module included in the following assemblies:
+//
+// authenticating-on-scm-server-with-a-personal-access-token
+
+[id="configuring_github_authentication_{context}"]
+= Authenticating on GitHub servers
+
+Configuring authentication on the GitHub system is similar to GitLab.
+
+GitHub authentication can be based on using personal access tokens. Each GitHub user is able to request several personal access tokens with different names, permissions, expiration times, and so on. Those tokens can be used to sign GitHub REST API calls and perform Git repository operations.
+
+To allow GitHub authentication on {prod-short} side, personal tokens must be stored in the user's {orch-namespace} in the form of
+a secret. The secret must look as follows:
+
+.GitHub personal access token secret
+====
+include::example$snip_github-personal-access-token-secret.adoc[]
+====
+
+The main parts of the secret are:
+
+[cols=3*]
+|===
+| Label
+| `app.kubernetes.io/component`
+| Indicates it is an SCM personal token secret. 
+
+| Annotation
+| `che.eclipse.org/che-userid`
+| {prod} id of the user token belongs to
+
+| Annotation
+| `che.eclipse.org/scm-userid`
+| GitHub user id to which token belongs
+
+| Annotation
+| `che.eclipse.org/scm-username`
+| GitHub username to which token belongs
+
+| Annotation
+| `che.eclipse.org/scm-url`
+| GitHub server URL to which this token belongs. Typically, it is `https://github.com`
+
+| Annotation
+| `che.eclipse.org/expired-after`
+| Personal access token expiration time
+
+| Data entry
+| `token`
+| Base-64 encoded value of the personal access token
+
+|===
+
+NOTE: Encoding a string into the base64 format using the `base64` tool on Linux machines leads to adding the newline character to the end of the source string and causing a value to be unusable as the authentication header value after decoding. Avoid this by using `base64 -w0`, which removes newly added lines, or strip newlines explicitly using`tr -d \\n`.
+
+. To obtain a user ID from a secret,  make a call to a REST API URL:
++
+[subs="+quotes,macros"]
+----
+++https++://api.github.com/user
+----
+
+* For {prod-short}
++
+[subs="+macros,attributes"]
+----
+{prod-url}/api/user
+----
+
+* With the token credentials obtained from a secret, another secret is automatically created, allowing authorization to Git operations. This secret is mounted into a workspace container as a Git credentials file, and any additional configurations are not required to work with private Git repositories.
+
+* When a remote Git repository uses a self-signed certificate, add an additional server configuration. See:
+xref:installation-guide:deploying-che-with-support-for-git-repositories-with-self-signed-certificates.adoc[].

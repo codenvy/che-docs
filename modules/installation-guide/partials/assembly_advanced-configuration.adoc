@@ -16,7 +16,9 @@ The next sections describe some specific user stories.
 
 * xref:configuring-namespace-strategies.adoc[]
 
-* xref:configuring-the-number-of-workspaces-a-user-can-run.adoc[]
+* xref:configuring-the-number-of-workspaces-that-a-user-can-create.adoc[]
+
+* xref:configuring-the-number-of-workspaces-that-a-user-can-run.adoc[]
 
 * xref:configuring-workspaces-nodeselector.adoc[]
 

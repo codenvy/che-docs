@@ -16,28 +16,24 @@ endif::[]
 
 Configuring support for self-signed Git repositories.
 
-ifeval::["{project-context}" == "che"]
-In the instructions below, substitute `kubectl` for `oc` when running {prod-short} on {kubernetes}.
-endif::[]
-
 . Create a new *ConfigMap* with details about the Git server:
 +
-[subs="+quotes"]
+[subs="+quotes,+attributes"]
 ----
-$ oc create configmap che-git-self-signed-cert --from-file=ca.crt \
-  --from-literal=githost=__<host:port>__ -n {prod-namespace}
+$ {orch-cli} create configmap che-git-self-signed-cert \
+  --from-file=ca.crt=__<path_to_certificate>__ \  <1>
+  --from-literal=githost=__<host:port>__ -n {prod-namespace}  <2>
 ----
-+
-In the command, substitute `_<host:port>_` for the host and port of the HTTPS connection on the Git server (optional).
+<1> Path to self-signed certificate
+<2> The host and port of the HTTPS connection on the Git server (optional).
 +
 [NOTE]
 ====
 * When `githost` is not specified, the given certificate is used for all HTTPS repositories.
-* The certificate file must be named `ca.crt`.
 * Certificate files are typically stored as Base64 ASCII files, such as. `.pem`, `.crt`, `.ca-bundle`. Also, they can be encoded as binary data, for example, `.cer`.  All `Secrets` that hold certificate files should use the Base64 ASCII certificate rather than the binary data certificate.
 ====
 
-. Configure the workspace exposure strategy:
+. Configure {prod-short} to use self-signed certificates for git repositories:
 +
 ifeval::["{project-context}" == "che"]
 =====
@@ -49,8 +45,10 @@ ifeval::["{project-context}" == "che"]
 +
 [subs="+quotes,+attributes"]
 ----
-$ helm upgrade che -n {prod-namespace} --set global.useGitSelfSignedCerts=true \
-  --set global.ingressDomain=__<kubernetes-cluster-domain>__ .
+$ helm upgrade che -n {prod-namespace} \
+  --set global.useGitSelfSignedCerts=true \
+  --set global.ingressDomain=__<kubernetes-cluster-domain>__ \
+  -f values/multi-user.yaml -f values/tls.yaml .
 ----
 
 On Minikube, substitute `_<kubernetes-cluster-domain>_` with `$(minikube ip).nip.io`.
@@ -79,5 +77,5 @@ $ {orch-cli} patch checluster/{prod-checluster} -n {prod-namespace} --type=json 
 +
 ----
 [http "https://10.33.177.118:3000"]
-        sslCAInfo = /etc/che/git/cert/ca.crt
+sslCAInfo = /etc/che/git/cert/ca.crt
 ----

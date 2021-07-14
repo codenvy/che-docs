@@ -1,0 +1,18 @@
+:parent-context-of-configuring-the-number-of-workspaces-that-a-user-can-run: {context}
+
+[id="configuring-the-number-of-workspaces-that-a-user-can-run_{context}"]
+= Configuring the number of workspaces that a user can run
+
+:context: configuring-the-number-of-workspaces-that-a-user-can-run
+
+This article describes how to configure the number of workspaces that a user can run simultaneously. 
+
+include::partial$proc_using-the-operator-to-configure-the-number-of-workspaces-that-a-user-can-run.adoc[leveloffset=+1]
+
+ifeval::["{project-context}" == "che"]
+
+include::partial$proc_using-configmap-to-configure-the-number-of-workspaces-that-a-user-can-run.adoc[leveloffset=+1]
+
+endif::[]
+
+:context: {parent-context-of-configuring-the-number-of-workspaces-that-a-user-can-run}

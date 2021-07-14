@@ -1,0 +1,18 @@
+:parent-context-of-configuring-the-number-of-workspaces-that-a-user-can-create: {context}
+
+[id="configuring-the-number-of-workspaces-that-a-user-can-create_{context}"]
+= Configuring the number of workspaces that a user can create
+
+:context: configuring-the-number-of-workspaces-that-a-user-can-create
+
+This article describes how to configure the number of workspaces that a user can create.
+
+include::partial$proc_using-the-operator-to-configure-the-number-of-workspaces-that-a-user-can-create.adoc[leveloffset=+1]
+
+ifeval::["{project-context}" == "che"]
+
+include::partial$proc_using-configmap-to-configure-the-number-of-workspaces-that-a-user-can-create.adoc[leveloffset=+1]
+
+endif::[]
+
+:context: {parent-context-of-configuring-the-number-of-workspaces-that-a-user-can-create}]

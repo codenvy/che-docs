@@ -2,7 +2,7 @@
 [id="configuring-namespace-strategies_{context}"]
 = Configuring workspace target {orch-namespace}
 
-The {platforms-namespace} where a new workspace Pod is deployed depends on the {prod-short} server configuration. By default, every workspace is deployed in an individual {orch-namespace} per user. The name of a {platforms-namespace} must be provided as a {prod-short} server configuration property or pre-created by {prod-short} administrator.
+The {platforms-namespace} where a new workspace is deployed depends on the {prod-short} server configuration. {prod-short} deploys each workspace into a user's dedicated {orch-namespace}, which hosts all {prod-short} workspaces created by the user. The name of a {platforms-namespace} must be provided as a {prod-short} server configuration property or pre-created by {prod-short} administrator.
 
 ifeval::["{project-context}" == "che"]
 NOTE: The term _{orch-namespace}_ ({kubernetes}) is used interchangeably with _project_ (OpenShift).
@@ -44,7 +44,7 @@ endif::[]
 
 NOTE: The underlying environment variable that {prod-short} server uses is `CHE_INFRA_KUBERNETES_NAMESPACE_DEFAULT`.
 
-WARNING: By default, only one workspace in the same {orch-namespace} can be running at one time. See xref:configuring-the-number-of-workspaces-a-user-can-run.adoc[].
+WARNING: By default, only one workspace in the same {orch-namespace} can be running at one time. See xref:configuring-the-number-of-workspaces-that-a-user-can-run.adoc[].
 
 [WARNING]
 ====

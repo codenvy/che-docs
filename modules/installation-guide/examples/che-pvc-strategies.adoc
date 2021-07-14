@@ -10,7 +10,7 @@ One PVC for all workspaces in one {platforms-namespace}
 
 * Each workspace is in a separate {platforms-namespace}
 
-* Only one workspace is running per {platforms-namespace} at the same time. See xref:installation-guide:configuring-the-number-of-workspaces-a-user-can-run.adoc[].
+* Only one workspace is running per {platforms-namespace} at the same time. See xref:installation-guide:configuring-the-number-of-workspaces-that-a-user-can-run.adoc[].
 |*per-workspace* |
 
 One PVC for one workspace

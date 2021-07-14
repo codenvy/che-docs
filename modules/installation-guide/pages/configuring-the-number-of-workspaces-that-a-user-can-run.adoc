@@ -1,0 +1,7 @@
+[id="configuring-the-number-of-workspaces-that-a-user-can-run"]
+// = Configuring the number of workspaces that a user can run
+:navtitle: Configuring the number of workspaces that a user can run
+:keywords: installation-guide, running-workspaces
+:page-aliases: .:configuring-the-number-of-workspaces-that-a-user-can-run, .:running-more-than-one-workspace-at-a-time, running-more-than-one-workspace-at-a-time
+
+include::partial$assembly_configuring-the-number-of-workspaces-that-a-user-can-run.adoc[]

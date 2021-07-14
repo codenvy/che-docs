@@ -335,7 +335,7 @@ webViewPanel.webview.html ='<html><body><h1>Hello from web view</h1></body></htm
 
 [NOTE]
 ====
-Web view content is destroyed when hidden. To restore its state, register a serializer, or set the `retainContextWhenHidden` option for the web view. Even with this option set, hiding a web view pauses all scripts, and the web view will not process messages from the plug-in.
+Web view content is removed when hidden. To restore its state, register a serializer, or set the `retainContextWhenHidden` option for the web view. Even with this option set, hiding a web view pauses all scripts, and the web view will not process messages from the plug-in.
 
 The current state of a web view can be read from the web view panel object.
 
