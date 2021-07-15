@@ -20,11 +20,11 @@ BUFF=""
 OUTPUT_PATH="$PARENT_PATH/modules/installation-guide/examples/system-variables.adoc"
 
 fetch_current_version() {
-  echo "Trying to read current product version from $PARENT_PATH/antora-playbook.yml..." >&2
+  echo "Trying to read current product version from $PARENT_PATH/antora.yml..." >&2
   # remove spaces, single and double quotes from the value of prod-ver, then append .x
-  CURRENT_VERSION=$(grep 'prod-ver:' "$PARENT_PATH/antora-playbook.yml" | cut -d: -f2 | tr -d " '\"").x
+  CURRENT_VERSION=$(grep 'prod-ver:' "$PARENT_PATH/antora.yml" | cut -d: -f2 | tr -d " '\"").x
   if [ $? -ne 0 ]; then
-    echo "Failure: Cannot read version from $PARENT_PATH/antora-playbook.yml" >&2
+    echo "Failure: Cannot read version from $PARENT_PATH/antora.yml" >&2
     exit 1
   fi
   if [[ "$CURRENT_VERSION" == *-SNAPSHOT ]]; then

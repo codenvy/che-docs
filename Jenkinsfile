@@ -76,9 +76,7 @@ spec:
         milestone 21
         container('che-docs') {
           dir('che-docs') {
-                sh './tools/environment_docs_gen.sh'
-                sh './tools/checluster_docs_gen.sh'
-                sh 'CI=true antora generate antora-playbook.yml --stacktrace'
+                sh './tools/publication.sh'
             }
         }
         milestone 22

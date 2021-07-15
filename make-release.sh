@@ -43,13 +43,13 @@ if [[ ${USE_TMP_DIR} -eq 1 ]]; then
   cd /tmp/ && tmpdir=tmp-${0##*/}-$VERSION && git clone $REPO $tmpdir && cd /tmp/$tmpdir
 fi
 
-# where in other repos we have a VERSION file, here we have an antora-playbook.yml file which contains some keys:
-#    prod-prev-ver-major: 6 [never changes]
-#    prod-ver-major: 7 [never changes]
-#    prod-prev-ver: 7.24 [always prod-ver - 1]
-#    prod-ver: 7.25
-#    prod-ver-patch: 7.25.2
-playbookfile=antora-playbook.yml
+# where in other repos we have a VERSION file, here we have an antora.yml file which contains some keys:
+#    prod-prev-ver-major: "6" [never changes]
+#    prod-ver-major: "7" [never changes]
+#    prod-prev-ver: "7.24" [always prod-ver - 1]
+#    prod-ver: "7.25"
+#    prod-ver-patch: "7.25.2"
+playbookfile=antora.yml
 updateYaml() {
   NEWVERSION=${1}
   echo "[INFO] update $playbookfile with prod-ver = $NEWVERSION"

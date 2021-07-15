@@ -40,7 +40,7 @@ The available resources of the `theia` {namespace} are described in the link:htt
 
 NOTE: Many APIs in the {namespace} are experimental and can change in the future.
 
-Available resources of the `che` {orch-namespace} are described in the link:https://raw.githubusercontent.com/eclipse/che-theia/{prod-ver-patch}/extensions/eclipse-che-theia-plugin/src/che.d.ts[`che.d.ts`] file in the link:https://github.com/eclipse-che/che-theia[Che-Theia repository].
+Available resources of the `che` {orch-namespace} are described in the `extensions/eclipse-che-theia-plugin/src/che.d.ts` file in the link:https://github.com/eclipse-che/che-theia[Che-Theia repository].
 
 This {namespace} contains APIs and types related to {prod-short}. Some sections are a bridge to {prod-short} API. The following is a list of the sections:
 
