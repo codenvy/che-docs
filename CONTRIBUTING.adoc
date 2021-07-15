@@ -96,7 +96,7 @@ TIP: For Antora, a link:https://docs.antora.org/antora/2.3/module-directories/#m
 
 . To review the pull request:
 
-.. Validate the accuracy of content, as well as build, language, links and modular docs requirements.
+.. See the xref:code_review_checklist.adoc[code review checklist].
 
 .. For documentation updates containing testable steps, the documentation pull request needs to have the `team/che-qe` label set and get reviewed by both the documentation team and the Che QA team.
 

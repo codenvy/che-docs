@@ -1,0 +1,46 @@
+# Pull Request review checklist for committers and reviewers
+:toc: auto
+
+The reviewer validates the content of a Pull Request with this checklist.
+
+## Automated validation steps
+
+These automated steps are blocking pull request merge.
+
+* [ ] *`Build and validate PR / link checker (pull_request)`* is successful
+** [ ] *`Build using Antora`* step is successful: documentation is building without warnings, and all AsciiDoc attributes have a definition.
+** [ ] *`Validate links using htmltest`* step is successful: internal and external links are valid.
+** [ ] *`Validate language on files added or modified`* step is successful and reports no vale errors: basic language validation, no major deviations from link:https://www.oreilly.com/library/view/the-ibm-style/9780132118989/[IBM Style Guide] and link:https://redhat-documentation.github.io/supplementary-style-guide/[Supplementary Style Guide], and project specific language rules.
+* [ ] *`eclipsefdn/eca`*  is successful: all contributors have signed the Eclipse Contributor Agreement  (ECA).
+
+## Non automated validation steps
+
+The author and the reviewers validate the content of this Pull Request with this additional checklist:
+
+* Any procedure:
+** [ ] Successfully tested.
+** [ ] Describes a scenario already covered by QE tests, otherwise Che QE team has acknowledged an issue.
+* Any page or link rename:
+** [ ] The page contains a redirection for the previous URL.
+** Propagate the URL change in:
+*** [ ] Dashboard [default branding data](https://github.com/eclipse-che/che-dashboard/blob/main/src/services/bootstrap/branding.constant.ts)
+*** [ ] Chectl [constants.ts](https://github.com/che-incubator/chectl/blob/master/src/constants.ts)
+* [ ] Builds on https://workspaces.openshift.com[Eclipse Che hosted by Red Hat].
+* [ ] *`Validate language on files added or modified`* step reports no vale warnings.
+
+## In depth language review checklist
+
+The reviewers validate the language with this additional in depth checklist.
+
+- [ ] Content is appropriate for the intended audience.
+- [ ] Downstream friendly: correct use of attributes, `ifdef` statements, examples.
+- [ ] Effective titles.
+- [ ] Follows modularization guidelines. See: link:https://redhat-documentation.github.io/modular-docs/[Modular Documentation Reference Guide].
+- [ ] Follows the principles of minimalism. See: link:https://docs.google.com/presentation/d/1Yeql9FrRBgKU-QlRU-nblPJ9pfZKgoKcU8SW6SQ_UqI/edit#slide=id.g1f4790d380_2_257[The Wisdom of Crowds slides], link:https://youtu.be/s3Em8QSXyn8[The Wisdom of Crowds video], link:https://www.nngroup.com/articles/chunking/[Chunking].
+- [ ] Information is clear and concise, no ambiguity.
+- [ ] Language is consistent with the rest of the docs.
+- [ ] Language is compliant with link:https://www.oreilly.com/library/view/the-ibm-style/9780132118989/[IBM Style Guide] and link:https://redhat-documentation.github.io/supplementary-style-guide/[Supplementary Style Guide] rules not implemented in vale.
+- [ ] No sentences with low information value.
+- [ ] Sequence of information is logical.
+- [ ] Uses screenshot and other visuals when required.
+- [ ] Uses verification steps when necessary.

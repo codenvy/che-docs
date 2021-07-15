@@ -6,6 +6,8 @@
 [Cc]lassloading
 [Cc]he
 [Dd]evfile|[Dd]evfiles
+[Dd]ownstream
+[Dd]ownstreaming
 [Ff]actories|[Ff]actory
 [Gg]it
 [Gg]rafana
@@ -22,6 +24,7 @@
 [Mm]inikube
 [Mm]inishift
 [Mm]ixin|[Mm]ixins
+[Mm]odularization
 [Mm]ultiuser
 [Nn]amespace|[Nn]amespaces
 [Nn]etcoredebug[Oo]utput
