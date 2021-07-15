@@ -21,14 +21,12 @@ When a TLS certificate is not trusted, the error message *"Your {prod2} server m
 . Save the certificate:
 .. Click the warning or open lock icon on the left of the address bar.
 .. Click *Certificates* and navigate to the *Details* tab.
-.. Select the top-level certificate which is the Root certificate authority and export it:
+.. Select the top-level certificate, which is the needed Root certificate authority (do not export the unfolded certificate from the lower level), and export it:
 +
 * On Linux, click the btn:[Export] button.
 * On Windows, click the btn:[Save to file] button.
 
-. Go to link:chrome://settings/certificates[Google Chrome Settings], then to the *Authorities* tab
-. In the left panel, select *Advanced* and continue to *Privacy and security*.
-. At the center of the screen, click *Manage certificates* and navigate to *Authorities* tab.
+. Go to link:chrome://settings/certificates[Google Chrome Certificates settings] in the *Privacy and security* section and navigate to the *Authorities* tab.
 . Click the btn:[Import] button and open the saved certificate file.
 . Select *Trust this certificate for identifying websites* and click the btn:[OK] button.
 . After adding the {prod-short} certificate to the browser, the address bar displays the closed lock icon next to the URL, indicating a secure connection.
