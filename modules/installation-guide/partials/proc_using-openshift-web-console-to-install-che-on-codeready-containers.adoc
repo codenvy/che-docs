@@ -1,0 +1,49 @@
+[id="using-openshift-web-console-to-install-{prod-id-short}-on-codeready-containers_{context}"]
+= Using the OpenShift web console to install {prod-short} on CodeReady Containers
+
+.Prerequisites
+
+* An installation of CodeReady Containers. See link:https://cloud.redhat.com/openshift/install/crc/installer-provisioned[Installing CodeReady Containers].
+
+.Procedure 
+
+. To configure your host machine for CodeReady Containers, run:
++
+----
+$ crc setup
+----
+
+. To remove any previous cluster, run:
++
+----
+$ crc delete
+----
+
+. To start the CodeReady Containers virtual machine with at least 12 GB of RAM, run:
++
+----
+$ crc start --memory 12288
+----
+
+. When prompted, supply your user pull secret.
+
+. Take note of the password for the user `kubeadmin`, which the `crc start --memory 12288` command outputs.
+
+. To access the OpenShift web console, run:
++
+----
+$ crc console
+----
+
+. In the web console, log in with the username `developer` and the password `developer`. 
+
+. In the top right corner of the OpenShift web console, click *developer* -> *Log out*.
+
+. Log in with the `kubeadmin` username and the corresponding password.
+
+. Follow the procedure for xref:installing-che-on-openshift-4-using-operatorhub.adoc[].
+
+.Additional resources
+
+* link:https://access.redhat.com/documentation/en-us/red_hat_codeready_containers/[Product documentation for Red Hat CodeReady Containers].
+* link:https://github.com/code-ready/crc[CodeReady Containers on GitHub].

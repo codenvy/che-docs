@@ -7,13 +7,11 @@
 
 :context: installing-{prod-id-short}-on-codeready-containers
 
-This article explains how to create a single-node OpenShift cluster with CodeReady Containers to deploy {prod-short}.
+This chapter describes the creation of a single-node OpenShift cluster for deploying a {prod-short} instance using CodeReady Containers. To install {prod-short}, use the`{prod-cli}` command-line tool or the OpenShift web console GUI.
 
-WARNING: Remember that single-node OpenShift clusters are suited only for testing or single-user development. Do *NOT* use such clusters to run {prod-short} for organizations or developer teams.
+include::partial$proc_using-chectl-to-install-che-on-codeready-containers.adoc[leveloffset=+1]
 
-include::partial$proc_using-codeready-containers-to-set-up-openshift-4.adoc[leveloffset=+1]
-
-include::partial$proc_installing-che-on-codeready-containers-using-chectl.adoc[leveloffset=+1]
+include::partial$proc_using-openshift-web-console-to-install-che-on-codeready-containers.adoc[leveloffset=+1]
 
 include::end-user-guide:partial$proc_importing-certificates-to-browsers.adoc[leveloffset=+1]
 

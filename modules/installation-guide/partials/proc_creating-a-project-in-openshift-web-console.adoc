@@ -5,11 +5,11 @@
 [id="creating-a-project-in-openshift-web-console_{context}"]
 = Creating a project in OpenShift Web Console
 
-A project allows to organize and manage different resources on the cluster in an isolated unit. Create a project first to host the {prod} Operator.
+By creating a project, you can organize and manage different resources on the cluster in an isolated unit. Create a project to host the {prod} Operator.
 
 .Procedure
 
-. Open the OpenShift web console, in the left panel navigate to the *Home* -> *Projects* section.
+. Open the OpenShift web console. In the left panel, navigate to the *Home* -> *Projects* section.
 
 . Click btn:[Create Project].
 

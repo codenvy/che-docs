@@ -1,0 +1,82 @@
+// Module included in the following assemblies:
+//
+// installing-{prod-id-short}-on-codeready-containers
+
+[id="using-{prod-cli}-to-install-{prod-id-short}-on-codeready-containers_{context}"]
+= Using {prod-cli} to install {prod-short} on CodeReady Containers 
+
+This section describes how to install {prod-short} on CodeReady Containers (CRC) using `{prod-cli}`.
+
+.Prerequisites
+
+* The `{prod-cli}` management tool is available. See xref:using-the-chectl-management-tool.adoc[].
+* An installation of CodeReady Containers. See link:https://cloud.redhat.com/openshift/install/crc/installer-provisioned[Installing CodeReady Containers].
+* The path to the user's CRC pull secrete is known.
+
+.Procedure
+
+. Initiate the CRC platform:
+
+.. Configure your host machine for CodeReady Containers:
++
+----
+$ crc setup
+----
+
+.. Remove any previous cluster:
++
+----
+$ crc delete
+----
+
+.. Initiate the `oc` command line interface within CRC: 
++
+----
+$ eval $(crc oc-env)
+----
+
+.. Start the CodeReady Containers virtual machine with at least 12 GB of RAM and specify the path to your pull secret:
++
+[subs="+quotes"]
+----
+$ crc start --memory 12288 --pull-secret-file __<download-path>__pull-secret.txt
+----
+
+.. Take note of the password for the user `kubeadmin`, displayed at the end of the CRC initiation.
+
+. Log into OpenShift cluster using the `kubeadmin` username, the corresponding `__<kubeadmin-password>__` password, and the CRC URL pointer displayed at the end of the CRC initiation phase:
++
+[subs="+quotes"]
+----
+$ oc login --username="kubeadmin" --password="__<kubeadmin-password>__" https://api.crc.testing:6443
+
+----
+
+. Install the {prod-short} instance using {prod-cli}:
++
+[subs="+attributes"]
+----
+$ {prod-cli} server:deploy --platform crc
+----
+
+. Use the Users Dashboard CRC testing URL and sign in as:
++
+----
+Login: developer
+Password: developer
+----
++
+* For the first time {prod-short} installation, a user needs to import the {prod-short} certificate to the browser of their choice. See, xref:end-user-guide:importing-certificates-to-browsers.adoc[].
++
+[NOTE]
+====
+For a {prod-cli} installation, the browser certificate is copied to the `/tmp/cheCA.crt` folder by the `chectl cacert:export` command during the deployment. This is the same certificate that can be extracted from the User Dashboard of a {prod-short} instance, the export of which is described in the link above, and can be used for the direct browser import.
+====
+
+. Enter the user's credentials and start using {prod-short}.
+
+
+.Additional resources
+
+* link:https://access.redhat.com/documentation/en-us/red_hat_codeready_containers/[Product documentation for Red Hat CodeReady Containers].
+* link:https://github.com/code-ready/crc[CodeReady Containers on GitHub].
