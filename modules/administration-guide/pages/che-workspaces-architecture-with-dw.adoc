@@ -1,0 +1,7 @@
+[id="che-workspaces-architecture-with-dw"]
+// = Che Workspace components with DevWorkspace Operator
+:navtitle: Che workspaces architecture
+:keywords: administration-guide, che-workspaces-architecture, devworkspace
+:page-aliases: .:che-workspaces-architecture-with-dw
+
+include::partial$assembly_understanding-che-workspaces-architecture-with-dw.adoc[]

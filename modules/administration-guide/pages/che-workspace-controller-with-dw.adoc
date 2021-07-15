@@ -1,0 +1,7 @@
+[id="che-workspace-controller-with-dw"]
+// = Che workspace controller with DevWorkspace
+:navtitle: Che workspace controller
+:keywords: administration-guide, che-workspace-controller
+:page-aliases: .:che-workspace-controller-with-dw
+
+include::partial$assembly_understanding-che-workspace-controller-with-dw.adoc[]

@@ -1,0 +1,18 @@
+[id="{prod-id-short}-workspaces-architecture-with-dw_{context}"]
+= {prod-short} workspaces components with the DevWorkspace Operator
+
+A {prod-short} deployment on a {orch-name} cluster consists of the {prod-short} server-side components and several additional Pods hosting workspaces. The {prod-short} server orchestrates the lifecycle of those workspaces, which consist of one or more containers running an IDE with its plug-ins, development tools and the application runtime dependencies.
+
+The {prod-short} workspace is composed by microservices running in containers to provide the features of a modern IDE running in your browser.
+
+The source code of the projects of a {prod-short} workspace is persisted in a {platforms-name} `PersistentVolume`. Microservices run in containers that have read-write access to the source code (IDE services, development tools), and runtime applications have read-write access to this shared directory.
+
+The following diagram shows the detailed components of a {prod-short} workspace.
+
+.{prod-short} workspace components
+image::architecture/workspace-components-with-dw.png[]
+
+In the diagram, there is one running workspaces.
+
+Use the devfile format to specify the tools and runtime applications of a {prod-short} workspace.
+

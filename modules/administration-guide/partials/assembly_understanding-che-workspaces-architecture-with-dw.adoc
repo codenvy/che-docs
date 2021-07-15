@@ -1,0 +1,19 @@
+
+
+:parent-context-of-understanding-che-workspaces-architecture-with-dw: {context}
+
+[id="understanding-{prod-id-short}-workspaces-architecture_{context}-with-dw"]
+= Understanding {prod-short} workspace components with the DevWorkspace Operator
+
+:context: understanding-{prod-id-short}-workspaces-architecture-with-dw
+
+include::partial$con_che-workspaces-architecture-with-dw.adoc[leveloffset=+1]
+
+
+include::partial$assembly_che-workspace-components.adoc[leveloffset=+1]
+
+
+include::partial$con_che-workspace-creation-flow.adoc[leveloffset=+1]
+
+
+:context: {parent-context-of-understanding-che-workspaces-architecture-with-dw}

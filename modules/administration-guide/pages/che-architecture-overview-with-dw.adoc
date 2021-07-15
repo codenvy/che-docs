@@ -1,0 +1,7 @@
+[id="che-architecture-overview-with-dw"]
+// = Che architecture with DevWorkspace
+:navtitle: Future Che architecture
+:keywords: administration-guide, che-architecture-overview
+:page-aliases: .:che-architecture-overview-with-dw, .:high-level-che-architecture-with-dw, overview:high-level-che-architecture-with-dw, administration-guide:high-level-che-architecture-with-dw
+
+include::partial$con_che-architecture-overview-with-dw.adoc[]

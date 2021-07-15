@@ -3,6 +3,7 @@
 * xref:che-architecture-overview.adoc[]
 ** xref:che-workspace-controller.adoc[]
 ** xref:che-workspaces-architecture.adoc[]
+** xref:che-architecture-overview-with-dw.adoc[]
 
 * xref:calculating-che-resource-requirements.adoc[]
 

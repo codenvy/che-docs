@@ -1,0 +1,19 @@
+// Module included in the following assemblies:
+//
+// {prod-id-short}-workspace-controller-with-dw
+
+
+[id="devworkspace-operator_{context}"]
+= DevWorkspace Operator
+
+The DevWorkspace is an Operator that extends the {kubernetes} API to manage DevWorkspaces custom resources. It's written in Go and the API interface is automatically generated from the https://github.com/devfile/api[Devfile] specification.
+
+[cols=2*]
+|===
+| Source code
+| link:https://github.com/devfile/devworkspace-operator[DevWorkspace Operator repository] 
+
+| Container image
+| `quay.io/devfile/devworkspace-controller`
+
+|===

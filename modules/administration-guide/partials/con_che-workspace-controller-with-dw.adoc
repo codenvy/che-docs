@@ -1,0 +1,14 @@
+
+[id="{prod-id-short}-workspace-controller-with-dw_{context}"]
+= {prod-short} server and the DevWorkspace Operator
+
+The {prod-short} server and the DevWorkspace Operator are the two central server-side components of {prod-short}. Together it manages {prod-short} workspaces: container-based development environments.
+
+NOTE: When {prod-short} uses the DevWorkspace Operator, it can only be configured in **multi-user** mode: multi-tenant and secured development environments.
+
+NOTE: When {prod-short} uses the DevWorkspace Operator, {identity-provider} is not a requirement anymore. On vanilla Kubernetes, {prod-short} can be configured to use any OpenID Connect (OIDC) provider (the default is https://dexidp.io/[Dex]). On OpenShift, {prod-short} uses the available OpenShift OAuth v2 service.
+
+The following diagram shows the different server-side components of {prod-short}.
+
+.{prod-short} workspaces controller
+image::architecture/workspaces-server-and-devworkspace.png[]

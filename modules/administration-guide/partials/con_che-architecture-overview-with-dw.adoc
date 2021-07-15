@@ -1,0 +1,20 @@
+[id="{prod-id-short}-architecture-overview-with-dw_{context}"]
+= {prod-short} architecture when using the DevWorkspace Operator
+
+{prod-short} default workspace engine is still the {prod-id-short}-server but from v.7.28.0 of {prod-short} an administrator can configure {prod-short} to use another workspace engine: the https://github.com/devfile/devworkspace-operator[DevWorkspace {orch-name} Operator]. With this new workspace engine configured, {prod-short} workspaces are valid {orch-name} objects and inherit the characteristics of such objects: managed with the {orch-name} API and secured through RBAC. This section describes the architecture of {prod-short} with the DevWorkspace {orch-name} Operator as the workspace engine. This will eventually become the default architecture when the DevWorkspace will reach feature parity with {prod-id-short}-server. Until then an administrator has to explicitly configure {prod-id-short} to use the DevWorkspace following the instructions in xref:installation-guide:enabling-dev-workspace-engine.adoc[this article].
+
+{prod} components, with the DevWorkspace Operator enabled, are:
+
+* A workspace server: an always-running service that manages user workspaces through the DevWorkspace Operator.
+* DevWorkspace Operator: the DevWorkspace Custom Resource Definition and the associated controller that extend {orch-name} and provide DevWorkpaces native support.
+* User workspaces: container-based IDEs that the server stops when the user stops coding.
+
+.High-level {prod-short} architecture
+image::administration-guide:architecture/{project-context}-architecture-with-dw.png[]
+
+When {prod-short} is installed on a {platforms-name} cluster, the workspace server and the DevWorkspace Operator are deployed. A {prod-short} workspace is created immediately after a user requests it.
+
+.Additional resources
+
+* xref:administration-guide:che-workspace-controller-with-dw.adoc[]
+* xref:administration-guide:che-workspaces-architecture-with-dw.adoc[]

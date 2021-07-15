@@ -1,0 +1,24 @@
+
+
+:parent-context-of-understanding-che-workspace-controller-with-dw: {context}
+
+[id="understanding-{prod-id-short}-workspace-controller_{context}-with-dw"]
+= Understanding {prod-short} server-side components with the DevWorkspace Operator
+
+:context: understanding-{prod-id-short}-workspace-controller-with-dw
+
+include::partial$con_che-workspace-controller-with-dw.adoc[leveloffset=+1]
+
+include::partial$con_devworkspace-operator.adoc[leveloffset=+1]
+
+include::partial$con_che-server.adoc[leveloffset=+1]
+
+include::partial$con_che-user-dashboard.adoc[leveloffset=+1]
+
+include::partial$con_che-devfile-registry.adoc[leveloffset=+1]
+
+include::partial$con_che-plug-in-registry.adoc[leveloffset=+1]
+
+include::partial$con_che-postgresql.adoc[leveloffset=+1]
+
+:context: {parent-context-of-understanding-che-workspace-controller-with-dw}
