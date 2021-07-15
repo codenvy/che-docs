@@ -34,7 +34,7 @@ Choose one of the following procedures to start the {prod-short} Server using th
 
 .Additional resources
 
-* xref:end-user-guide:creating-a-workspace-from-code-sample.adoc[]
+* xref:end-user-guide:creating-a-workspace-from-included-options.adoc[]
 * xref:end-user-guide:creating-a-workspace-by-importing-the-source-code-of-a-project.adoc[]
 
 :context: {parent-context-of-running-che-locally}

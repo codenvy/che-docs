@@ -1,5 +1,5 @@
 [id="creating-a-workspace-by-importing-the-source-code-of-a-project"]
-:navtitle: Creating a workspace by importing the source code of a project
+:navtitle: Creating a workspace with your project's source code
 :keywords: end-user-guide, creating-a-workspace-by-importing-the-source-code-of-a-project
 :page-aliases: .:creating-a-workspace-by-importing-the-source-code-of-a-project, .:creating-a-workspace-by-importing-source-code-of-a-project, creating-a-workspace-by-importing-source-code-of-a-project
 

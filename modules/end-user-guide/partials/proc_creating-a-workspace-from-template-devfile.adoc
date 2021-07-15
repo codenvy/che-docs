@@ -1,0 +1,31 @@
+// Module included in the following assemblies:
+
+[id="creating-a-workspace-from-template-devfile_{context}"]
+= Creating a workspace from a template devfile
+
+You can create a new workspace by using one of the devfile templates included in {prod-short}.
+
+.Prerequisites
+
+* A running instance of {prod-short}
++
+To install {prod-short}, see the xref:installation-guide:installing-che.adoc[Installation Guide].
+
+.Procedure
+
+. Go to the xref:navigating-che-using-the-dashboard.adoc[Dashboard] of {prod-short}.
+
+. In the left navigation panel, click btn:[Create Workspace] to go to the *Custom Workspace* tab.
+
+. Enter a workspace name.
++
+[NOTE]
+====
+If you do not enter a *Workspace Name* for your workspace, {prod-short} generates a unique name for a new workspace from the devfile's `metadata.generateName` property followed by four random characters.
+====
+
+. Select a devfile template from the drop-down list.
+
+. Click btn:[Create & Open].
+
+. Wait for the initialized workspace to start and for the IDE to open.

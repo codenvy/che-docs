@@ -1,21 +1,34 @@
 :parent-context-of-authoring-devfiles-version-2: {context}
 
 [id="authoring-devfiles-version-2_{context}"]
-= Authoring devfiles version 2
+= Authoring a devfile 2.0.0
+//a new attribute to be considered for supported devfile version specification for when all three assemblies on the topic of authoring a devfile are rewritten. max-cx
 
 :context: authoring-devfiles-version-2
 
-This section explains the concept of the devfile 2.0 specification and how to configure a {prod-short} workspace by using a devfile 2.0. 
+When you author or edit a devfile for configuring a workspace, the devfile must meet the devfile 2.0.0 specification.
 
-.Prerequisites:
-* An instance of {prod-short} with the DevWorkspace Operator enabled, see xref:installation-guide:enabling-dev-workspace-engine.adoc[]
+.Prerequisites
+* An instance of {prod-short} with the xref:installation-guide:enabling-dev-workspace-engine.adoc[DevWorkspace Operator] enabled
++
+To install {prod-short}, see xref:installation-guide:installing-che.adoc[Installing {prod-short}].
 
 .Procedure
 //TODO - Figure out whether we want to duplicate, single source or just reference devfile docs here
-* To create devfiles with the 2.0 specification, see link:https://docs.devfile.io/devfile/2.0.0/user-guide/authoring-stacks.html[]
+
+* To author or edit a devfile 2.0.0, follow the instructions in the link:https://docs.devfile.io/devfile/2.0.0/user-guide/authoring-stacks.html[Devfile User Guide].
 
 .Additional resources
 
-* link:https://redhat-developer.github.io/devfile/devfile[Devfile 2.0 specification]
+* For more information about devfile object schema and object properties, see the link:https://redhat-developer.github.io/devfile/devfile[Introduction to Devfiles].
+//To note, the page linked to on the preceeding line discusses devfile 1.0.0, which readers here might find confusing. max-cx
 
 :context: {parent-context-of-authoring-devfiles-version-2}
+
+////
+Hesitant to add "version" here for these reasons:
+. The "version" in this text refers to the devfile's format or specification; the devfile itself has no "version 1" or "version 2".
+. Having a title on "authoring a devfile version" seems a bit distracting to me, as it's about authoring a devfile, not about authoring a version.
+. The IMB Style Guide on p. 185 seems to suggest not using "version" when referring to a product name and alternatively using only "version" on its own as a generic reference without the product name.
+max-cx
+////

@@ -5,51 +5,58 @@
 [id="adding-language-support-plug-in-to-the-{prod-id-short}-workspace_{context}"]
 = Adding a language support plug-in to a {prod-short} workspace
 
-This procedure describes adding a tool to an existing workspace by enabling a dedicated plug-in from the Dashboard.
+This procedure describes adding a tool to a created workspace by enabling a dedicated plug-in from the Dashboard.
 
-To add tools that are available as plug-ins into a {prod-short} workspace, use one of the following methods:
+//To add tools that are available as plug-ins into a {prod-short} workspace, use one of the following methods:
+//The sentence on the prev line seems to be out of place at the time of writing this comment, hence commenting it out. max-cx
 
 * xref:installing-the-plug-in-by-adding-content-to-the-devfile_{context}[Edit the workspace devfile from the Dashboard *Devfile* tab.]
 
-This procedure uses the Language Support for Java plug-in as an example.
+This procedure uses the Language Support for Java plug-ins as an example.
 
 .Prerequisites
 
-* A running instance of {prod-short}. To install an instance of {prod-short}, see {link-installing-an-instance}.
+* A running instance of {prod-short}.
++
+To install an instance of {prod-short}, see {link-installing-an-instance}.
 
-* An existing workspace defined in this instance of {prod}; see:
-** xref:configuring-a-workspace-with-dashboard.adoc[]
-** xref:creating-a-workspace-from-code-sample.adoc#creating-a-workspace-from-quick-add-view-of-user-dashboard_{context}[Creating a workspace from Quick Add view of user dashboard]
+* A created workspace that is defined in this instance of {prod}
++
+To define a workspace, see the following resources:
+** xref:configuring-a-workspace-with-dashboard.adoc[Configuring a {prod-short} {prod-ver} workspace]
+** xref:creating-a-workspace-from-included-options.adoc#creating-a-workspace-from-workspace-sample_{context}[Creating a workspace from workspace sample]
 
- * The workspace must be in a **stopped** state. To stop a workspace:
-
-.. Navigate to the {prod-short} Dashboard. See xref:navigating-che-using-the-dashboard.adoc[].
-
+ * The workspace must be in a **stopped** state.
+ +
+ To stop a workspace:
+ //Is there a different section that describes this procedure? max-cx
+.. Navigate to the {prod-short} Dashboard, as explained in xref:navigating-che-using-the-dashboard.adoc[].
 .. In the *Dashboard*, click the *Workspaces* menu to open the workspaces list and locate the workspace.
-
-.. On the same row with the displayed workspace, on the right side of the screen, click the square btn:[Stop] button to stop the workspace.
-
-.. Wait a few seconds for the workspace to stop (the workspace's icon on the list will turn grey), then configure the workspace by selecting it.
+.. On the same row with the displayed workspace, on the right side of the screen, click btn:[Stop] to stop the workspace.
+.. Wait a few seconds for the workspace to stop, and then configure the workspace by selecting it.
 
 .Procedure
 
-To add the plug-in from the Plug-in registry to an existing {prod-short} workspace, use one of the following methods:
+To add a plug-in from the Plug-in registry to a created {prod-short} workspace, install the plug-in as follows by adding content to the devfile:
+//To add a plug-in from the Plug-in registry to a created {prod-short} workspace, use one of the following methods:
+//This list contains only one entry at the time of writing this comment, hence commenting out the sentence on the previous line. max-cx
 
 [id="installing-the-plug-in-by-adding-content-to-the-devfile_{context}"]
 
 //<<installing-the-plug-in-by-adding-content-to-the-devfile_{context}>>
 
-** Installing the plug-in by adding content to the devfile.
-. Navigate to the *Devfile* tab. The devfile YAML is displayed.
-. Locate the `components` section of the devfile and add the following lines to add the Java language plugin with Java 8 to the workspace:
+//** Installing the plug-in by adding content to the devfile. commented out by max-cx
+. Navigate to the *Devfile* tab, where the devfile YAML is displayed.
+. In the `components` section of the devfile, add the following lines to add the Java 8 language plugin to the workspace:
 +
 include::example${project-context}-java-language-support.adoc[]
 +
 An example of the final result:
 +
 include::example${project-context}-workspace-from-the-php-stack-java-language-support.adoc[]
-. On the bottom right side of the screen, save the changes using the btn:[Save] button. After changes are saved, the workspace can be restarted and will include the new plug-in.
-
+. Click btn:[Save] to save the changes.
+. Restart the workspace.
+. Verify that the workspace now includes the new plug-in.
 
 .Additional resources
 
