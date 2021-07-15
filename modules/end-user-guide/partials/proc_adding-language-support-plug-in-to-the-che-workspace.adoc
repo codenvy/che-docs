@@ -8,6 +8,7 @@
 This procedure describes adding a tool to an existing workspace by enabling a dedicated plug-in from the Dashboard.
 
 To add tools that are available as plug-ins into a {prod-short} workspace, use one of the following methods:
+//This list contains only one entry at the time of writing this comment. max-cx
 
 * xref:installing-the-plug-in-by-adding-content-to-the-devfile_{context}[Edit the workspace devfile from the Dashboard *Devfile* tab.]
 
@@ -18,8 +19,9 @@ This procedure uses the Language Support for Java plug-in as an example.
 * A running instance of {prod-short}. To install an instance of {prod-short}, see {link-installing-an-instance}.
 
 * An existing workspace defined in this instance of {prod}; see:
-** xref:configuring-a-workspace-with-dashboard.adoc[]
-** xref:creating-a-workspace-from-code-sample.adoc#creating-a-workspace-from-quick-add-view-of-user-dashboard_{context}[Creating a workspace from Quick Add view of user dashboard]
+** xref:configuring-a-workspace-with-dashboard.adoc[Configuring a {prod-short} {prod-ver} workspace]
+
+** xref:creating-a-workspace-from-included-options.adoc#creating-a-workspace-from-workspace-sample_{context}[Creating a workspace from workspace sample]
 
  * The workspace must be in a **stopped** state. To stop a workspace:
 

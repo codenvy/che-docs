@@ -52,7 +52,7 @@ installed on OpenShift
 endif::[]
 that uses the default OpenShift OAuth support, user authentication relies on the integration of {identity-provider} with OpenShift OAuth. This allows users to log in to {prod-short} with their OpenShift login and have their workspaces created under personal OpenShift projects.
 +
-This requires setting up an OpenShift {platforms-identity-provider}. When using an external {identity-provider}, configure the {identity-provider} manually. For instructions, see the appropriate {identity-provider} documentations for either link:{link-identity-provider-documentation-openshift-3}[OpenShift 3] or link:{link-identity-provider-documentation-openshift-4}[OpenShift 4].
+This requires setting up an OpenShift {platforms-identity-provider}. When using an external {identity-provider}, configure the {identity-provider} manually. For instructions, see the appropriate {identity-provider} documentations for either {link-identity-provider-documentation-openshift-3} or {link-identity-provider-documentation-openshift-4}.
 
 * The configured {identity-provider} has the options *Store Tokens* and *Stored Tokens Readable* enabled.
 

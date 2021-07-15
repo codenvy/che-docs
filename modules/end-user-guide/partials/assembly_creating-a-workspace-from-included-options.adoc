@@ -1,0 +1,20 @@
+:parent-context-of-creating-a-workspace-from-included-options: {context}
+
+[id="creating-a-workspace-from-included-options_{context}"]
+= Creating a workspace from included options
+
+:context: creating-a-workspace-from-included-options
+
+{prod-short} includes optional workspace samples and devfile templates to simplify workspace creation.
+
+. xref:creating-a-workspace-from-workspace-sample_{context}[Creating a workspace from workspace sample]
+
+. xref:creating-a-workspace-from-template-devfile_{context}[Creating a workspace from template devfile]
++
+For information about devfiles, see xref:authoring-devfiles-version-2.adoc[Authoring a devfile 2.1.0].
+
+include::partial$proc_creating-a-workspace-from-workspace-sample.adoc[leveloffset=+1]
+
+include::partial$proc_creating-a-workspace-from-template-devfile.adoc[leveloffset=+1]
+
+:context: {parent-context-of-creating-a-workspace-from-included-options}

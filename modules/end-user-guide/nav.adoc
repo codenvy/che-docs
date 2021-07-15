@@ -10,7 +10,7 @@
 ** xref:che-theia-troubleshooting.adoc[]
 ** xref:differences-in-how-che-theia-webview-works-on-a-single-host-mode-comparing-to-a-multi-host-mode.adoc[]
 * xref:workspaces-overview.adoc[]
-** xref:creating-a-workspace-from-code-sample.adoc[]
+** xref:creating-a-workspace-from-included-options.adoc[]
 ** xref:creating-a-workspace-from-remote-devfile.adoc[]
 ** xref:creating-a-workspace-from-local-devfile-using-chectl.adoc[]
 ** xref:creating-a-workspace-by-importing-the-source-code-of-a-project.adoc[]

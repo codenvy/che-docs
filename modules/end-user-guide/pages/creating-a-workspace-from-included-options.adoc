@@ -1,0 +1,7 @@
+[id="creating-a-workspace-from-included-options"]
+// = Creating a workspace from included options
+:navtitle: Creating a workspace from included options
+:keywords: end-user-guide, creating-a-workspace-from-included-options
+:page-aliases: .:creating-a-workspace-from-included-options
+
+include::partial$assembly_creating-a-workspace-from-included-options.adoc[]

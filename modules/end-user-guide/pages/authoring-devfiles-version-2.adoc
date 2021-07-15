@@ -1,6 +1,6 @@
 [id="authoring-devfiles-version-2"]
 // 
-:navtitle: Authoring devfiles version 2
+:navtitle: Authoring a devfile 2.1.0
 :keywords: end-user-guide, authoring-devfiles-version-2
 :page-aliases: .:authoring-devfiles-version-2
 

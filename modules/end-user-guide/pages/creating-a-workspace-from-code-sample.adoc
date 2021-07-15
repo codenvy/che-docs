@@ -1,7 +1,0 @@
-[id="creating-a-workspace-from-code-sample"]
-// = Creating a workspace from code sample
-:navtitle: Creating a workspace from code sample
-:keywords: end-user-guide, creating-a-workspace-from-code-sample
-:page-aliases: .:creating-a-workspace-from-code-sample
-
-include::partial$assembly_creating-a-workspace-from-code-sample.adoc[]

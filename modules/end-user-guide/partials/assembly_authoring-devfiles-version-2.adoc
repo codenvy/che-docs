@@ -1,21 +1,26 @@
 :parent-context-of-authoring-devfiles-version-2: {context}
 
 [id="authoring-devfiles-version-2_{context}"]
-= Authoring devfiles version 2
+= Authoring a devfile 2.1.0
+//a new attribute to be considered for supported devfile version specification for when all three assemblies on the topic of authoring a devfile are rewritten. max-cx
 
 :context: authoring-devfiles-version-2
 
-This section explains the concept of the devfile 2.0 specification and how to configure a {prod-short} workspace by using a devfile 2.0. 
+Your devfile for configuring a workspace must meet the devfile 2.1.0 specification.
 
-.Prerequisites:
-* An instance of {prod-short} with the DevWorkspace Operator enabled, see xref:installation-guide:enabling-dev-workspace-engine.adoc[]
+.Prerequisites
+* An instance of {prod-short} with the xref:installation-guide:enabling-dev-workspace-engine.adoc[DevWorkspace Operator enabled]
++
+To install {prod-short}, see xref:installation-guide:installing-che.adoc[Installing {prod-short}].
 
 .Procedure
 //TODO - Figure out whether we want to duplicate, single source or just reference devfile docs here
-* To create devfiles with the 2.0 specification, see link:https://docs.devfile.io/devfile/2.0.0/user-guide/authoring-stacks.html[]
+
+Create a devfile 2.1.0 with the help of the link:https://docs.devfile.io/devfile/2.0.0/user-guide/authoring-stacks.html[Devfile User Guide].
 
 .Additional resources
 
-* link:https://redhat-developer.github.io/devfile/devfile[Devfile 2.0 specification]
+* link:https://redhat-developer.github.io/devfile/devfile[Introduction to Devfile]
+//To note, the page linked to on the preceeding line discusses devfile 1.0.0., which readers here might find confusing. max-cx
 
 :context: {parent-context-of-authoring-devfiles-version-2}

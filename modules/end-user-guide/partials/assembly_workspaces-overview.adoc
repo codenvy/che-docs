@@ -7,7 +7,7 @@
 
 :context: developer-workspaces
 
-{prod} provides developer workspaces with everything needed to a code, build, test, run, and debug applications. To allow that, the developer workspaces provide four main components:
+{prod} provides developer workspaces with everything you need to code, build, test, run, and debug applications. To allow that, the developer workspaces provide four main components:
 
 . The source code of a project.
 . A web-based integrated development environment (IDE).
@@ -70,7 +70,7 @@ To start a {prod-short} workspace:
 
 Use the Dashboard to discover {prod-short} {prod-ver}:
 
-* xref:creating-a-workspace-from-code-sample.adoc[]
+* xref:creating-a-workspace-from-included-options.adoc[]
 * xref:creating-a-workspace-by-importing-the-source-code-of-a-project.adoc[]
 
 Use a devfile as the preferred way to start a {prod-short} {prod-ver} workspace:

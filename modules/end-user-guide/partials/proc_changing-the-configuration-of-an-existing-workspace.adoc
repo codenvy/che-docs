@@ -1,6 +1,6 @@
 // Module included in the following assemblies:
 //
-// creating-a-workspace-from-code-sample
+// creating-a-workspace-from-code-sample (I didn't find it there, max-cx)
 
 [id="changing-the-configuration-of-an-existing-workspace_{context}"]
 = Changing the configuration of an existing workspace

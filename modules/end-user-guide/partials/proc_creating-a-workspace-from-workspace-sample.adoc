@@ -1,0 +1,30 @@
+// Module included in the following assemblies:
+//
+// creating-a-workspace-from-included-options
+
+[id="creating-a-workspace-from-workspace-sample_{context}"]
+= Creating a workspace from workspace sample
+
+You can create a new workspace by using one of the workspace samples included in {prod-short}.
+
+.Prerequisites
+
+* A running instance of {prod-short}
++
+To install {prod-short}, see the xref:installation-guide:installing-che.adoc[Installation Guide].
+
+.Procedure
+
+. Go to the xref:navigating-che-using-the-dashboard.adoc[Dashboard] of {prod-short}.
+
+. In the left navigation panel, click btn:[Create Workspace] to go to the *Get Started* tab with workplace samples.
+
+. Select a sample to start a new workspace.
+
+. Wait for the initialized workspace to start and for the IDE to open.
+
+[NOTE]
+.New workspace name
+====
+{prod-short} generates a unique name for a new workspace from the devfile's `metadata.generateName` property followed by four random characters. You can edit the name of the workspace when it is created.
+====

@@ -25,5 +25,5 @@ include::partial$proc_upgrading-che-and-losing-user-data.adoc[leveloffset=+1]
 
 * xref:configuring-namespace-strategies.adoc[]
 * xref:installation-guide:installing-che.adoc[]
-* xref:end-user-guide:creating-a-workspace-from-code-sample.adoc[]
+* xref:end-user-guide:creating-a-workspace-from-included-options.adoc[]
 * xref:end-user-guide:creating-a-workspace-by-importing-the-source-code-of-a-project.adoc[]
